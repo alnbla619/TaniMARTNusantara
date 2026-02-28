@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pasar Padi Nusantara</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url('https://images.unsplash.com/photo-1592878849122-26c52d7e1d2e');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 48px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    header p {
+      margin-top: 20px;
+      font-size: 18px;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .btn {
+      margin-top: 30px;
+      padding: 15px 30px;
+      background: #28a745;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.3s;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background: #218838;
+    }
+
+    section {
+      padding: 80px 10%;
+      text-align: center;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .feature-box {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      width: 300px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      transition: 0.3s;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-10px);
+    }
+
+    .feature-box h3 {
+      margin-bottom: 15px;
+      color: #28a745;
+    }
+
+    .products {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 15px;
+      width: 280px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product-card div {
+      padding: 20px;
+    }
+
+    .product-card:hover {
+      transform: scale(1.05);
+    }
+
+    .cta {
+      background: #28a745;
+      color: white;
+      padding: 60px 10%;
+    }
+
+    footer {
+      background: #222;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    @media(max-width: 768px) {
+      header h1 {
+        font-size: 32px;
+      }
+      .features, .products {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Pasar Padi Nusantara</h1>
+  <p>Platform jual beli hasil petani padi langsung dari sawah ke pembeli. Harga adil, kualitas terjamin, tanpa perantara.</p>
+  <a href="#produk" class="btn">Lihat Produk</a>
+</header>
+
+<section>
+  <h2>Tentang Kami</h2>
+  <p>Kami menghubungkan petani padi dengan pembeli secara langsung untuk menciptakan ekosistem pertanian yang adil dan transparan.</p>
+
+  <div class="features">
+    <div class="feature-box">
+      <h3>Harga Transparan</h3>
+      <p>Harga langsung dari petani tanpa tengkulak.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Kualitas Terjamin</h3>
+      <p>Gabah & beras dipilih dari petani terbaik.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Pembayaran Aman</h3>
+      <p>Sistem pembayaran aman dan terpercaya.</p>
+    </div>
+  </div>
+</section>
+
+<section id="produk">
+  <h2>Produk Unggulan</h2>
+  <div class="products">
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c" alt="Beras Premium">
+      <div>
+        <h3>Beras Premium</h3>
+        <p>Mulai dari Rp 12.000/kg</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1604908554027-d04d4b6d75c6" alt="Gabah Kering">
+      <div>
+        <h3>Gabah Kering</h3>
+        <p>Mulai dari Rp 6.000/kg</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Bergabung Bersama Kami</h2>
+  <p>Daftarkan diri Anda sebagai petani atau pembeli sekarang juga.</p>
+  <a href="#" class="btn" style="background:white;color:#28a745;">Daftar Sekarang</a>
+</section>
+
+<footer>
+  © 2026 Pasar Padi Nusantara | Platform Jual Beli Hasil Petani Padi
+</footer>
+
+</body>
+</html>
